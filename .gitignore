@@ -1,0 +1,12 @@
+# Binarios compilados sin extension (macOS/Linux)
+ejercicio*
+Hola_mundo
+programa
+
+# Ejecutables de Windows
+*.exe
+
+# Archivos de depuracion y temporales de Mac / VS Code
+*.dSYM/
+.DS_Store
+.vscode/
