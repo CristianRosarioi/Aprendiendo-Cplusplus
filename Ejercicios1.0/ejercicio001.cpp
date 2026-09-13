@@ -23,7 +23,7 @@ Luego, imprima una ficha formateada con los datos que ingresó y calcule cuánto
         cin >> edad;
         cout << "Ingrese su promedio acumulado: ";
         cin >> promedio;
-        cout << "\nFicha Universitaria Interactiva" << endl;
+        cout << "\n Ficha Universitaria Interactiva" << endl;
         cout << "Nombre: " << nombre << endl;
         cout << "Edad: " << edad << endl;
         cout << "Promedio acumulado: " << promedio << endl; 

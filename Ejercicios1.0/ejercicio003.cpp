@@ -1,4 +1,3 @@
-
 // Rangos y condiciones compuestas (else if, &&)
 
 /* Siguiente Reto: Rangos y condiciones compuestas (else if, &&)
@@ -59,7 +58,7 @@ int main() {
     return 0;
 }
 
-/*Desglosemos paso a paso cada símbolo, operador y estructura nueva que apareció en este bloque de evaluación.
+/* Desglosemos paso a paso cada símbolo, operador y estructura nueva que apareció en este bloque de evaluación.
 1. El operador OR lógico: ||
 C++
 if (promedio > 100 || promedio < 0)
@@ -100,6 +99,6 @@ Operador	Significado	Ejemplo	Resultado si promedio = 85
 &&	AND lógico (ambos)	promedio >= 80 && promedio < 90	true
 ||	OR lógico (al menos uno)	promedio > 100 || promedio < 0	false
 !	NOT lógico (negación)	!(promedio >= 70)	false
-Nota sobre el doble igual (== vs =): En C++, un solo signo = es para asignación (int x = 10;), mientras que el doble signo == es para comparación lógica (if (x == 10)). Confundirlos dentro de un if es uno de los errores más comunes en la universidad.*/
+Nota sobre el doble igual (== vs =): En C++, un solo signo = es para asignación (int x = 10;), mientras que el doble signo == es para comparación lógica (if (x == 10)). Confundirlos dentro de un if es uno de los errores más comunes en la universidad. */
 
 
