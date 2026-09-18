@@ -1,7 +1,11 @@
 # Binarios compilados sin extension (macOS/Linux)
+# Los ejecutables se generan en build/ (ver scripts/build.sh)
 
 # Ejecutables de Windows
 *.exe
+
+# Carpeta de ejecutables
+/build/
 
 # Archivos de depuracion y temporales de Mac / VS Code
 *.dSYM/
