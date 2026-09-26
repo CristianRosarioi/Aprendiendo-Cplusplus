@@ -1,0 +1,25 @@
+Crear una solución en C++ para cada requerimiento dado.
+1. Hacer un programa que calcule el promedio de los números múltiplos de
+7 desde un entero numDesde leído por teclado hasta un entero
+numHasta también leído por teclado. Debe validar que el primer entero
+sea menor que el segundo. (use un ciclo while).
+2. Los números primos son aquellos números divisibles solamente entre 1
+y ellos mismos, por ejemplo: 23, 17, 19, 7. Diseñar un programa que
+imprima todos los números primos que existen entre 30 y 300.
+3. Escriba un programa que lea dos números: double base y int
+exponente. El programa debe calcular la potencia de base elevado a
+exponente, considere además que el exponente puede ser negativo.
+Si exponente < 0; entonces potencia = 1 / base exponente
+La idea es no usar la función pow de la librería <cmath>, el objetivo es
+escribir un algoritmo que calcule la potencia, es decir, hacer lo que hace
+la función pow.
+Resumen del ejercicio
+Tómese unos minutos para determinar qué experiencias, problemas, o
+descubrimientos obtuvo durante los ejercicios anteriores y coméntenlo en el
+foro.
+Experiencias
+Interpretaciones
+Conclusiones
+Aplicaciones
+
+
