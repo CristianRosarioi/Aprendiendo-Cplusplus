@@ -1,0 +1,40 @@
+Crear una solución en C++ para cada requerimiento dado. Debe enviar en
+un archivo comprimido (zip o rar) los programas fuentes (cpp) incluyendo
+un screenshot (printscreen) de la corrida y la compilación.
+
+1. Hacer un programa que lea una variable tipo string por teclado y
+determine la cantidad de caracteres en mayúscula, la cantidad de
+caracteres en minúscula, la cantidad de dígitos (números), la cantidad
+de signos de puntuación y la cantidad de caracteres alfanuméricos (A-Z,
+a-z).
+
+2. Mediante el uso de iteradotes imprima su nombre y apellido (leído por
+teclado en una sola variable tipo string) de forma vertical (un carácter o
+letra por línea). Debe usar un ciclo.
+
+3. Escriba un programa que defina una estructura llamada Factura con los
+siguientes componentes:
+
+Miembro Tipo
+factNumero long
+factCliente string
+factFecha string
+factMonto double
+factDescuento double
+factNeto double
+
+Leer los primeros cuatro miembros de la estructura por teclado, el
+descuento y el monto neto serán calculados de acuerdo a lo siguiente:
+a) Si el monto es mayor o igual que 20,000 pesos y menor que 30,000
+pesos, se aplicará un 7% de descuento a la factura
+b) Si el monto es mayor o igual que 30,000 pesos y menor que 50,000
+pesos, se aplicará un 10% de descuento a la factura
+c) Si el monto es mayor o igual que 50,000 pesos, se aplicará un
+descuento de un 14% a la factura
+d) Para descuentos menores a 20,000 pesos, no habrá descuento
+e) El monto neto será calculado restando el monto bruto menos el valor
+del descuento
+
+Nota al ejercicio 3. El programa debe darle valor a los miembros de la
+estructura faltantes (factDescuento y factNeto) y desplegar por pantalla la
+estructura completa, es decir, el contenido de todos sus miembros.
