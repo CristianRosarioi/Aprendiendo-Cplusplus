@@ -1,0 +1,23 @@
+Ejemplos para el modo 1 (uno por vez; confirma siempre la plantilla y el resumen):
+
+Calcular el promedio de los múltiplos de 5 entre dos números usando while.
+Contar los pares entre dos números sin incluir el final.
+Promediar solo notas aprobadas.
+Clasificar los caracteres: mayúsculas, dígitos y alfanuméricos.
+Contar las vocales de un nombre completo.
+Contar las apariciones de una letra sin distinguir mayúsculas.
+Mostrar los números primos dentro de un intervalo.
+Calcular una potencia con exponente negativo sin pow.
+Comparar dos números y decir si son iguales.
+Modificar una cadena con insert y erase.
+Contar una vocal según edad y sexo.
+
+Enunciados deliberadamente ambiguos o fuera del alcance:
+
+Calcular un promedio.
+Contar.
+Contar pares y múltiplos de 3 simultáneamente.
+Ordenar un vector de notas y calcular la mediana.
+Usar while para contar vocales.
+Programar algo distinto que no se parece a ninguna plantilla.
+*/
