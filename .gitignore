@@ -11,3 +11,9 @@
 *.dSYM/
 .DS_Store
 .vscode/
+
+# Obsidian - Ignorar estado temporal de trabajo
+**/.obsidian/workspace.json
+**/.obsidian/workspace-mobile.json
+**/.obsidian/cache/
+

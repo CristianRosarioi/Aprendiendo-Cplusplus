@@ -10,8 +10,21 @@ Pistas:
 #include <iostream>
 using namespace std;
 
+int anodenacimiento;
+int anofuturo;
+int edad;
+
 int main() {
-    // TODO: escribe tu solucion aqui
+    cout << "caul es tu ano de nacimiento ?";
+    cin >> anodenacimiento;
+
+    cout << "dime un ano futuro";
+    cin >> anofuturo;
+
+    edad = anodenacimiento - anofuturo;
+
+    cout << " en el futuro tu edad sera: " << edad << "anos" << endl;
+
 
     return 0;
 }
