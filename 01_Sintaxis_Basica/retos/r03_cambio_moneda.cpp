@@ -5,11 +5,22 @@ Escribe un programa que:
 3. Muestre cuantos dolares obtiene:  cantidad / tasa.
 Pistas: cantidad / tasa; */
 
+
 #include <iostream>
 using namespace std;
 
 int main() {
-    // TODO: escribe tu solucion aqui
 
-    return 0;
-}
+double dop;
+double tasa;
+
+cout << "cantidad en peso dominicano: ";
+cin >> dop;
+
+cout << "cual es la tasa del dolar hoy: ";
+cin >> tasa;
+
+cout << "el cambio a usd es: " << dop / tasa << endl;
+
+return 0;
+} 
