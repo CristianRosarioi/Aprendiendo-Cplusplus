@@ -1,3 +1,11 @@
+/*
+Universidad Autónoma de Santo Domingo UASD
+Centro UASD San Pedro, Escuela de informatica 5100-29
+Introduccion a la Programacion
+Cristian Rosario
+Matricula: 100806653
+*/
+
 #include <iostream>
 #include <string>
 #include <iomanip>
