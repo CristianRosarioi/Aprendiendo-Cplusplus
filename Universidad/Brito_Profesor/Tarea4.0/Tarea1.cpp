@@ -54,18 +54,29 @@ int main() {
 
     do {
         cout << "\nMAQUINA DE BEBIDAS" << endl;
-        cout << "Opcion | Bebida | Precio | Existencia" << endl;
-        cout << "------------------------------------" << endl;
+        cout << fixed << setprecision(2) << left;
+
+        cout << "+--------+----------------------+----------+------------+" << endl;
+
+        cout << "| " << setw(6) << "Opcion"
+             << " | " << setw(20) << "Bebida"
+             << " | " << setw(8) << "Precio"
+             << " | " << setw(10) << "Existencia"
+             << " |" << endl;
+
+        cout << "+--------+----------------------+----------+------------+" << endl;
 
         for (i = 0; i < bebidas.size(); i++) {
-            cout << i + 1 << " | "
-                 << bebidas.at(i).nombreBebida << " | "
-                 << bebidas.at(i).precioBebida << " | "
-                 << bebidas.at(i).cantidadEnMaquina
-                 << endl;
+            cout << "| " << setw(6) << i + 1
+                 << " | " << setw(20) << bebidas.at(i).nombreBebida
+                 << " | " << setw(8) << bebidas.at(i).precioBebida
+                 << " | " << setw(10) << bebidas.at(i).cantidadEnMaquina
+                 << " |" << endl;
         }
 
+        cout << "+--------+----------------------+----------+------------+" << endl;
         cout << "0. Salir" << endl;
+
         cout << "Seleccione una opcion: ";
         cin >> opcion;
 
@@ -123,3 +134,4 @@ int main() {
 
     return 0;
 }
+

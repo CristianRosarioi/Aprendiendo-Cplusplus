@@ -63,7 +63,7 @@ int main() {
     cout << "-----------------------------" << endl;
 
     for (i = 0; i < CANTIDAD; i++) {
-        cout << empId.at(i) << " | "
+        cout << empId.at(i) << "        | "
              << salarioBruto.at(i) << endl;
     }
 
