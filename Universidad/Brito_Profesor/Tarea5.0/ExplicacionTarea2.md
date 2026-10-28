@@ -27,8 +27,7 @@ bool inputOK(char);
 ```
 
 ## 2. Código completo — `tarea2.cpp`
-
-```
+```cpp
 
 /*
 Universidad Autonoma de Santo Domingo

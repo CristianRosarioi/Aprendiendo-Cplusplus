@@ -60,7 +60,7 @@ Por ejemplo, para obtener el quinto término, sumamos el tercero y el cuarto:
 
 Este programa utiliza únicamente conceptos que ya hemos estudiado: variables, `cin`, `cout`, `if`, `while`, `for`, funciones, parámetros y `return`.
 
-```
+```cpp
 
 /*
 Universidad Autonoma de Santo Domingo

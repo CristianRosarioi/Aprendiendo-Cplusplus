@@ -32,7 +32,7 @@ Esta es precisamente la característica de la unidad 5 que queremos practicar.
 
 ## 2. Código completo — `tarea3.cpp`
 
-```
+```cpp
 
 /*
 Universidad Autonoma de Santo Domingo
