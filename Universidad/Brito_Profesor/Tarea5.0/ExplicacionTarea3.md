@@ -133,13 +133,13 @@ Este programa es una versión didáctica que utiliza `atof()` para convertir los
 
 Hasta ahora utilizábamos:
 
-```
+```cpp
 int main() {
 ```
 
 Pero esta vez tenemos:
 
-```
+```cpp
 int main(int argc, char* argv[]) {
 ```
 
@@ -154,7 +154,7 @@ Aquí entran dos elementos nuevos.
 
 Veamos una ejecución:
 
-```
+```cpp
 ./calculadora 10 + 5
 ```
 
@@ -194,7 +194,7 @@ Por eso el primer número se encuentra en `argv[1]`, no en `argv[0]`.
 
 ### A. Los prototipos
 
-```
+```cpp
 double sumar(double a, double b);
 double restar(double a, double b);
 double multiplicar(double a, double b);
@@ -209,7 +209,7 @@ Por ejemplo, `dividir(5, 2)` debe devolver `2.5`.
 
 ### B. Comprobación de argumentos
 
-```
+```cpp
 if (argc != 4) {
     cout << "Uso: calculadora numero1 operacion numero2"
          << endl;
@@ -225,7 +225,7 @@ Aquí `return 1` está dentro de `main()` e indica que el programa terminó debi
 
 ### C. Conversión de datos
 
-```
+```cpp
 numero1 = atof(argv[1]);
 operacion = argv[2][0];
 numero2 = atof(argv[3]);
@@ -237,7 +237,7 @@ Primero, los argumentos de línea de comandos llegan como texto. Aunque escribas
 
 Segundo, `atof()` permite convertir ese texto a un número decimal.
 
-```
+```cpp
 atof("10.5")
 ```
 
@@ -254,7 +254,7 @@ Esto conecta con los arreglos y las cadenas de caracteres que vimos anteriorment
 
 ### D. Selección mediante `switch`
 
-```
+```cpp
 switch (operacion) {
     case '+':
         resultado = sumar(numero1, numero2);
@@ -276,7 +276,7 @@ Cada `case` representa una operación matemática y llama a su función correspo
 
 ### E. Validación de división entre cero
 
-```
+```cpp
 if (numero2 == 0) {
     cout << "Error: division entre cero." << endl;
     return 1;
@@ -291,13 +291,13 @@ Por eso comprobamos el segundo número antes de llamar a la función `dividir()`
 
 Observa lo pequeñas que son:
 
-```
+```cpp
 double sumar(double a, double b) {
     return a + b;
 }
 ```
 
-```
+```cpp
 double dividir(double a, double b) {
     return a / b;
 }
@@ -311,7 +311,7 @@ Aquí está la enseñanza central: `main()` decide qué hacer y las funciones re
 
 Cuando ejecutas:
 
-```
+```cpp
 ./calculadora 8 + 4
 ```
 
@@ -339,7 +339,7 @@ Guarda el código como `tarea3.cpp`.
 
 Compílalo:
 
-```
+```cpp
 clang++ -std=c++17 tarea3.cpp -o calculadora
 ```
 
@@ -357,13 +357,13 @@ Atención: para multiplicar, escribe `'*'` entre comillas simples en la terminal
 
 Para probar la calculadora con decimales:
 
-```
+```cpp
 ./calculadora 12.5 + 3.5
 ```
 
 Resultado:
 
-```
+```cpp
 Resultado: 16
 ```
 
@@ -384,7 +384,7 @@ En Windows, con el compilador del laboratorio, el ejecutable normalmente tendrá
 
 Hay una diferencia que no quiero que olvides:
 
-```
+```cpp
 resultado = sumar(numero1, numero2);
 ```
 
@@ -392,7 +392,7 @@ Aquí `sumar()` devuelve un valor que guardamos en `resultado`.
 
 En cambio:
 
-```
+```cpp
 cout << resultado;
 ```
 

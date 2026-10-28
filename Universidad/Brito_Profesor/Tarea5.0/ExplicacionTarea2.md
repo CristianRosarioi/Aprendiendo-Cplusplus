@@ -19,7 +19,7 @@ El programa debe:
 
 Además, el mandato sugiere estos cuatro prototipos, que respetaremos:
 
-```
+```cpp
 void displayMenu();
 char getComputerOption();
 string checkOptions(char, char);
@@ -196,7 +196,7 @@ Estas reglas son las que implementamos en la función `checkOptions()`.
 
 ### A. Bibliotecas utilizadas
 
-```
+```cpp
 #include <iostream>
 #include <string>
 #include <cstdlib>
@@ -216,7 +216,7 @@ Ya utilizaste `<cctype>` en la unidad 3, cuando trabajamos con caracteres y func
 
 ### B. Constantes globales
 
-```
+```cpp
 const char PIEDRA = 'P';
 const char PAPEL = 'A';
 const char TIJERA = 'T';
@@ -231,7 +231,7 @@ Además, el propio profesor recomienda estas constantes en el mandato.
 
 ### C. Los cuatro prototipos
 
-```
+```cpp
 void displayMenu();
 char getComputerOption();
 string checkOptions(char, char);
@@ -270,7 +270,7 @@ Esta es una de las ideas principales de la unidad 5: una función debe encargars
 
 ### D. ¿Por qué utilizamos `do-while`?
 
-```
+```cpp
 do {
     displayMenu();
 
@@ -292,7 +292,7 @@ Cuando el usuario introduce `S`, la condición deja de cumplirse y el ciclo term
 
 ### E. ¿Qué hace `toupper()`?
 
-```
+```cpp
 opcionUsuario = toupper(opcionUsuario);
 ```
 
@@ -311,7 +311,7 @@ Esto permite comparar siempre con las constantes en mayúsculas.
 
 ### F. La validación con `inputOK()`
 
-```
+```cpp
 bool inputOK(char opcion) {
 
     if (opcion == PIEDRA || opcion == PAPEL ||
@@ -331,7 +331,7 @@ Si recibe `'X'`, devuelve `false`.
 
 Ahora observa cómo la utilizamos:
 
-```
+```cpp
 while (!inputOK(opcionUsuario)) {
     cout << "Opcion no valida. Intente de nuevo: ";
     cin >> opcionUsuario;
@@ -347,7 +347,7 @@ El ciclo termina cuando el usuario introduce una opción válida.
 
 ### G. ¿Cómo elige la computadora?
 
-```
+```cpp
 srand(time(0));
 ```
 
@@ -357,7 +357,7 @@ Esta instrucción se ejecuta una vez, al iniciar el programa.
 
 Después tenemos:
 
-```
+```cpp
 char getComputerOption() {
     int numero = rand() % 3;
 
@@ -373,7 +373,7 @@ char getComputerOption() {
 
 La expresión:
 
-```
+```cpp
 rand() % 3
 ```
 
@@ -399,7 +399,7 @@ Importante: `rand()` genera números pseudoaleatorios, no verdaderamente aleator
 
 ### H. La función más importante: `checkOptions()`
 
-```
+```cpp
 string checkOptions(char usuario, char computadora) {
 
     if (usuario == computadora) {
@@ -424,7 +424,7 @@ Aquí combinamos dos operadores que ya has estudiado:
 
 Por ejemplo:
 
-```
+```cpp
 usuario == PIEDRA && computadora == TIJERA
 ```
 
@@ -503,7 +503,7 @@ Gracias por jugar.
 
 En tu Mac:
 
-```
+```cpp
 clang++ -std=c++17 tarea2.cpp -o tarea2
 ./tarea2
 ```

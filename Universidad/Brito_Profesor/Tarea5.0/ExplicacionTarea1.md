@@ -128,7 +128,7 @@ El código respeta el prototipo solicitado. Además, utiliza un ciclo `for` en v
 
 ### A. La biblioteca y el prototipo
 
-```
+```cpp
 #include <iostream>
 using namespace std;
 
@@ -137,7 +137,7 @@ long fibonacci(long);
 
 Ya conoces `<iostream>`, pero la tercera línea es nueva.
 
-```
+```cpp
 long fibonacci(long);
 ```
 
@@ -155,7 +155,7 @@ El punto y coma `;` termina el prototipo.
 
 ### B. La función `main()`
 
-```
+```cpp
 long terminoBuscado;
 long cantidad;
 ```
@@ -167,7 +167,7 @@ Declaramos dos variables:
 
 Por ejemplo, el usuario introduce `5`, pero el resultado es `3`. Son dos valores diferentes.
 
-```
+```cpp
 while (terminoBuscado <= 0) {
     cout << "El termino debe ser mayor que cero: ";
     cin >> terminoBuscado;
@@ -176,7 +176,7 @@ while (terminoBuscado <= 0) {
 
 Este `while` valida que la posición sea positiva. Como el mandato cuenta el primer término desde la posición 1, rechazamos posiciones como 0 o −3. Suponemos que el usuario introduce números enteros válidos.
 
-```
+```cpp
 cantidad = fibonacci(terminoBuscado);
 ```
 
@@ -188,7 +188,7 @@ Se lee:
 
 Si `terminoBuscado` es 5, equivale a llamar:
 
-```
+```cpp
 cantidad = fibonacci(5);
 ```
 
@@ -196,7 +196,7 @@ Después de ejecutar la función, `cantidad` recibe 3.
 
 ### C. Definición de `fibonacci`
 
-```
+```cpp
 long fibonacci(long n) {
 ```
 
@@ -206,7 +206,7 @@ Aquí empieza la definición real.
 
 Si llamamos `fibonacci(5)`, entonces dentro de la función `n` vale 5.
 
-```
+```cpp
 long anterior = 0;
 long actual = 1;
 long siguiente;
@@ -222,7 +222,7 @@ Estas variables sirven para construir la sucesión:
 
 Al principio:
 
-```
+```cpp
 anterior = 0
 actual   = 1
 ```
@@ -231,7 +231,7 @@ Son los dos primeros términos de Fibonacci.
 
 ### D. ¿Por qué usamos dos `if`?
 
-```
+```cpp
 if (n == 1) {
     return anterior;
 }
@@ -252,7 +252,7 @@ Porque ya conocemos las respuestas para las posiciones 1 y 2.
 
 Esta es la parte que quiero que comprendas especialmente.
 
-```
+```cpp
 for (long i = 3; i <= n; i++) {
     siguiente = anterior + actual;
     anterior = actual;
@@ -262,7 +262,7 @@ for (long i = 3; i <= n; i++) {
 
 Primero analicemos el encabezado:
 
-```
+```cpp
 for (long i = 3; i <= n; i++)
 ```
 
@@ -296,7 +296,7 @@ Tenemos los dos primeros términos.
 
 Las tres instrucciones del ciclo deben ejecutarse en ese orden:
 
-```
+```cpp
 siguiente = anterior + actual;
 anterior = actual;
 actual = siguiente;
@@ -308,7 +308,7 @@ Cuando `i` llega a 6, la condición `6 <= 5` es falsa y termina el ciclo.
 
 Finalmente:
 
-```
+```cpp
 return actual;
 ```
 
@@ -337,7 +337,7 @@ El tipo `long` tiene una capacidad limitada. Si solicitas una posición extremad
 
 En tu Mac, guarda el archivo como `tarea1.cpp`, abre la terminal en esa carpeta y escribe:
 
-```
+```cpp
 clang++ -std=c++17 tarea1.cpp -o tarea1
 ./tarea1
 ```
@@ -360,7 +360,7 @@ Lo fundamental de esta tarea no es memorizar los números de Fibonacci. Es que p
 
 En particular, recuerda la diferencia entre estas instrucciones:
 
-```
+```cpp
 long fibonacci(long);              // Prototipo
 cantidad = fibonacci(5);           // Llamada
 long fibonacci(long n) { ... }     // Definicion
