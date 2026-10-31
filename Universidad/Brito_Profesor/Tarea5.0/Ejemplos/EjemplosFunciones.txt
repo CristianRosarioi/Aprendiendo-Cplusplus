@@ -1,0 +1,333 @@
+
+INF510_Tema_08_Ejem2.txt
+
+
+/*
+  func8.cpp
+
+  C++ / Ferreiras / funciones / funciones void
+
+  01nov2010
+
+*/
+
+
+#include <iostream>
+ using namespace std;
+
+
+int main(void){
+
+   system("cls");
+   cout << "\n\n=> Haiti se le empeorara la situacion\n\n";
+   cout << "\n\n=> Colera, ya tiene, Tomas, viene por ahi\n\n";
+    
+   return 0;
+
+}
+
+
+
+/*
+  func8a.cpp
+
+  C++ / Ferreiras / funciones / funciones void
+
+  01nov2010
+
+*/
+
+
+#include <iostream>
+ using namespace std;
+
+
+// f1
+
+void f1(void){
+
+   system("cls");
+}
+
+// f2
+
+void f2(void){
+
+   cout << "\n\n=> Haiti se le empeorara la situacion\n\n";
+
+}
+
+// f3
+
+void f3(void){
+
+   cout << "\n\n=> Colera, ya tiene, Tomas, viene por ahi\n\n";
+}
+
+// ...
+
+void uso(void){
+
+   f1();
+   f2();
+   f3(); 
+}
+
+//...
+
+int main(void){
+
+   uso();     
+   return 0;
+
+}
+
+
+
+/*
+  func8b.cpp
+
+  C++ / Ferreiras / funciones / funciones void
+
+  01nov2010
+
+*/
+
+
+#include <iostream>
+ using namespace std;
+
+// declaramos las funciones, esto es, sus prototipos
+
+   void f1(void);
+   void f2(void);
+   void f3(void);
+   void uso(void);
+
+
+//...
+
+
+int main(void){
+
+   uso();     
+   return 0;
+
+}
+
+
+// f1
+
+void f1(void){
+
+   system("cls");
+}
+
+// f2
+
+void f2(void){
+
+   cout << "\n\n=> Haiti se le empeorara la situacion\n\n";
+
+}
+
+// f3
+
+void f3(void){
+
+   cout << "\n\n=> Colera, ya tiene, Tomas, viene por ahi\n\n";
+}
+
+// ...
+
+void uso(void){
+
+   f1();
+   f2();
+   f3(); 
+}
+
+
+
+/*
+  func8c.cpp
+
+  C++ / Ferreiras / funciones / retorno
+
+  03nov2010
+
+*/
+
+
+#include <iostream>
+ using namespace std;
+
+
+// f1
+
+void f1(void){
+
+   system("cls");
+}
+
+// f2
+
+string f2(void){
+
+   return "\n\n=> Haiti se le empeorara la situacion\n\n";
+
+}
+
+// f3
+
+string f3(void){
+
+   return "\n\n=> Colera, ya tiene, Tomas, viene por ahi\n\n";
+}
+
+// ...
+
+void uso(void){
+
+   f1();
+   cout << f2();
+   cout << f3(); 
+}
+
+//...
+
+int main(void){
+
+   uso();     
+   return 0;
+
+}
+
+
+
+/*
+  func8d.cpp
+
+  C++ / Ferreiras / funciones / retorno, argumentos por valor
+
+  03nov2010
+
+*/
+
+
+#include <iostream>
+ using namespace std;
+
+
+// f1
+
+void f1(void){
+
+   system("cls");
+}
+
+// f2
+
+string f2(string cad1){
+
+   return cad1;
+
+}
+
+// f3
+
+string f3(string cad2){
+
+   return cad2;
+}
+
+// ...
+
+void uso(void){
+
+   string c1("\n\n=> Haiti se le empeorara la situacion\n\n"),
+          c2("\n\n=> Colera, ya tiene, Tomas, viene por ahi\n\n");
+
+   f1();
+   cout << f2(c1);
+   cout << f3(c2); 
+}
+
+//...
+
+int main(void){
+
+   uso();     
+   return 0;
+
+}
+
+
+
+
+
+/*
+  func8e.cpp
+
+  C++ / Ferreiras / funciones / argumentos por referencia
+
+  03nov2010
+
+*/
+
+
+#include <iostream>
+ using namespace std;
+
+
+// f1
+
+void f1(void){
+
+   system("cls");
+}
+
+// f2
+
+void f2(string &cad1){
+
+  cad1 = cad1 + "  me se ocurre"  ;
+
+}
+
+// f3
+
+void f3(string &cad2){
+
+  cad2 = cad2 +  " Jonas se quedo igual, 50%\n\n";
+
+}
+
+// ...
+
+void uso(void){
+
+   string c1("\n\n=> Haiti se le empeorara la situacion\n\n"),
+          c2("\n\n=> Colera, ya tiene, Tomas, viene por ahi\n\n");
+
+   f1();
+   
+   cout << c1;
+   cout << c2; 
+   f2(c1);
+   f3(c2);
+   cout << c1;
+   cout << c2; 
+
+
+}
+
+//...
+
+int main(void){
+
+   uso();     
+   return 0;
+
+}
+
