@@ -1,0 +1,26 @@
+Enunciado: Crear un programa para un negocio; debe mostrar nombre del negocio
+y detalles del negocio,  bebe tener un menu de 5 opciones con su numeracion del 1-5 
+de lo que va a vender osea de el inventario del negocio, debe tener nombre y precio, 
+permitir que se elija una de las opciones y cuando el usuario elija esa opcion 
+el programa debe darle un msj que le diga aqui esta su pedido; osea el pedido que 
+el eligio..., trabaje con funciones desde esta primera funcion del programa.
+
+Agregar en la semana: ponerque que permita que la persona seleccione mas de una opcion
+ y la cantidad que quiere de cada uno, y si quiere varias cantidades de varios productos que le pregunte 
+hasta que pida cada uno, y le diga cuanto es el total, mas el itbis, y que le de el total, y un resumen 
+como una factura, que de subtotal y total general,  que de cantidad total subtotal y todo como una factura
+
+
+
+
+Mi negocio seleccionado: Accesorios Mashiaj "Perfumeria"
+
+Inventario:  				Precios
+
+Perfumes: One Million 3.4 oz - 		Precio(RD$5.000)
+Armari Aqua di Gio 3.4 oz - 		Precio(RD$7.000)
+Dolce Gabanna Light blue 4.2 oz - 	Precio(RD$4.200) 
+Nautica Voyage 3.4 oz -	 		Precio(RD$2.500)
+Valentino Born in roma 3.4 oz - 		Precio(RD$6.500)
+
+
