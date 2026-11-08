@@ -1,3 +1,10 @@
+/*
+Universidad Autónoma de Santo Domingo UASD
+Centro UASD San Pedro, Escuela de informatica 5100-29
+Introduccion a la Programacion
+Cristian Rosario
+Matricula: 100806653
+*/
 
 #include <iostream>
 #include <iomanip>
@@ -9,6 +16,7 @@ void mostrarNegocio();
 void mostrarMenu();
 string obtenerPerfume(int opcion);
 double obtenerPrecio(int opcion);
+double calcularITBIS(double subtotal);
 void mostrarFactura(int cantidades[]);
 
 int main() {
@@ -16,7 +24,7 @@ int main() {
     int opcion;
     int cantidad;
 
-    // Arreglo que guarda las cantidades compradas
+    // Arreglo para guardar las cantidades compradas
     int cantidades[5] = {0, 0, 0, 0, 0};
 
     mostrarNegocio();
@@ -27,7 +35,7 @@ int main() {
         cout << "\nSeleccione una opcion (0-5): ";
         cin >> opcion;
 
-        // Validar la opcion seleccionada
+        // Validar la opcion
         while (opcion < 0 || opcion > 5) {
             cout << "Opcion invalida. Seleccione del 0 al 5: ";
             cin >> opcion;
@@ -50,7 +58,7 @@ int main() {
                 cin >> cantidad;
             }
 
-            // Acumular la cantidad del producto seleccionado
+            // Acumular las cantidades de cada perfume
             cantidades[opcion - 1] += cantidad;
 
             cout << "\nProducto agregado a su pedido." << endl;
@@ -60,7 +68,7 @@ int main() {
 
     } while (opcion != 0);
 
-    // Mostrar la factura final
+    // Mostrar factura al finalizar
     mostrarFactura(cantidades);
 
     return 0;
@@ -75,7 +83,7 @@ void mostrarNegocio() {
     cout << "===============================================================" << endl;
 }
 
-// Funcion que muestra el menu de perfumes
+// Funcion que muestra el menu
 void mostrarMenu() {
 
     cout << fixed << setprecision(2);
@@ -153,6 +161,16 @@ double obtenerPrecio(int opcion) {
     }
 }
 
+// Funcion que calcula el ITBIS
+double calcularITBIS(double subtotal) {
+
+    double itbis;
+
+    itbis = subtotal * 0.18;
+
+    return itbis;
+}
+
 // Funcion que genera la factura
 void mostrarFactura(int cantidades[]) {
 
@@ -197,9 +215,10 @@ void mostrarFactura(int cantidades[]) {
         }
     }
 
-    // Calcular el ITBIS y el total general
-    itbis = subtotal * 0.18;
+    // Llamar la funcion que calcula el ITBIS
+    itbis = calcularITBIS(subtotal);
 
+    // Calcular el total general
     totalGeneral = subtotal + itbis;
 
     cout << "------------------------------------------------------------------------" << endl;
