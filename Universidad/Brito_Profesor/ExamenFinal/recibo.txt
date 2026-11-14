@@ -1,0 +1,23 @@
+
+
+===============================================================
+                       ACCESORIOS MASHIAJ
+                         FACTURA DE COMPRA
+===============================================================
+Nombre del cliente: cristian
+Numero de telefono: 8098983345
+
+Perfume                               Cantidad      Precio       Importe
+------------------------------------------------------------------------
+One Million 3.4 oz                           1     5000.00       5000.00
+Armani Acqua di Gio 3.4 oz                   4     7500.00      30000.00
+Dolce Gabbana Light Blue 4.2 oz              2     4200.00       8400.00
+Valentino Born in Roma 3.4 oz                2     6500.00      13000.00
+------------------------------------------------------------------------
+Total de unidades: 9
+Subtotal: RD$ 56400.00
+ITBIS (18%): RD$ 10152.00
+------------------------------------------------------------------------
+TOTAL GENERAL: RD$ 66552.00
+===============================================================
+Gracias por comprar en Accesorios Mashiaj.

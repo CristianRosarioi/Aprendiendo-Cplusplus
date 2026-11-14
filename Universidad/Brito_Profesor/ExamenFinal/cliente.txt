@@ -1,0 +1,3 @@
+DATOS DEL CLIENTE
+Nombre: cristian
+Telefono: 8098983345
